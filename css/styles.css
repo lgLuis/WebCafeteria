@@ -1,0 +1,30 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*
+https://colorhunt.co/palette/eeebddce12128100001b1717
+*/
+
+:root{
+    --primario:#1B1717;
+    --secundaio:#EEEBDD;
+    --rojo:#CE1212;
+    --rojoOscuro:#810000;
+    --turqueza:#3EDBF0;
+    --fuenteTitulo:'Lobster Two', cursive;;
+    --fuenteTexto:'Quicksand', sans-serif;
+    ;
+}
+
+h1{
+    font-family: var(--fuenteTitulo);
+    text-transform: uppercase;
+    font-size: 20rem;
+}
