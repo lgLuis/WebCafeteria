@@ -205,3 +205,56 @@ img{max-width: 100%;}
     margin-top: 4rem;
     text-shadow: none;
 }
+
+
+/*SOBRE NOSOTROS*/
+
+@media(min-width:768px){
+    /*
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis:  50%;
+    }
+    */
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 50%); */
+        column-gap: 2rem;
+    }
+}
+
+.sobre-nosotros p{
+    margin: 0;
+}
+
+
+/*CURSO*/
+.curso{
+    padding: 3rem;
+    border-bottom: 1px solid var(--rojo);
+}
+@media(min-width:768px){
+    .curso{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+}
+
+.curso__label{
+    font-family: var(--fuenteTexto);
+    font-weight: bold;
+}
+
+.curso__informacion{
+    font-weight: normal;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
